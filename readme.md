@@ -25,7 +25,7 @@ Add ` PhotosPreviewRecyclerview ` in your layout.
             android:layout_height="wrap_content"/> 
 ```
 
-You will see a fake preview in Android Studio of the creative view.
+You will see a fake preview in Android Studio of the recycleView.
 
 ## In your Activity / Fragment
 Use ` findViewById ` to find your ` PhotosPreviewRecyclerview `:
@@ -34,7 +34,8 @@ Use ` findViewById ` to find your ` PhotosPreviewRecyclerview `:
 First you **must** to initialize the recycler by calling the `init` function :
 `recycler.init(YOUR_DESIRED_PHOTOS_NUMBER : int);`
 
-![Init](samples/example1.jpg)
+<img src="samples/example1.jpg" width="200" height="400">
+<!-- ![Init](samples/example1.jpg) -->
 
 By default, this recyclerView uses `GridLayoutManager` with a span of 4.
 To change the span just use `recycler.setSpanCount(YOUR_DESIRED_SPAN_COUNT : int);`
