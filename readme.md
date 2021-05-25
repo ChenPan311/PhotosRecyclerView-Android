@@ -40,28 +40,34 @@ First you **must** to initialize the recycler by calling the `init` function :
 <img src="samples/example1.jpg" width="200" height="400">
 
 By default, this recyclerView uses `GridLayoutManager` with a span of 4.
+
 To change the span just use `recycler.setSpanCount(YOUR_DESIRED_SPAN_COUNT : int);`
 
 you can change the layout manager by simply setting another layout manager :
+
 `recycler.setLayoutManager(new LinearLayoutManager(getContext(),HORIZONTAL/VERTICAL, false));`
 
 You can change the photos size in the recycler by simply calling `setImagesSize` function:
+
 `recycler.setImagesSize(WIDTH,HEIGHT : int);`
 **The width and height in dp!**
 
 <img src="samples/examplesize.jpg" width="200" height="400">
 
 You can change the color of the delete button by calling `setDeleteButtonColor` :
+
 `recycler.setDeleteButtonColor(R.color.ANY_COLOR : int);`
 
 <img src="samples/examplecolor.jpg" width="200" height="400">
 
 You can change the place holder image with `recycler.setPlaceholder(RESOURCE_ID : int);` .
 
-In order to add photos to the recycler just call `recycler.addPhoto(STRING_URL : string)`
+In order to add photos to the recycler just call `recycler.addPhoto(STRING_URL : string)`,
+
 The url can be from the internet or from the external storage.
 
 Also there's an option to load the recyclerView with predefined urls :
+
 First create an `ArrayList<String>` :
 ```
 ArrayList<String> urls = new ArrayList<>();
@@ -74,6 +80,7 @@ ArrayList<String> urls = new ArrayList<>();
 Then `recycler.setImagesUris(urls : ArrayList<String>);`
 
 If the recycler reaches his limit of capacity a Toast will appear with the message 'Full',
+
 you can change it by calling `recycler.setMessageWhenFull(YOUR_DESIRED_MESSAGE_IN_STRING : string);`
 
 <img src="samples/examplemsg.jpg" width="200" height="400">
