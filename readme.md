@@ -19,7 +19,8 @@ This library uses Gradle for loading the images into the ImageViews(no need to i
 ### Layout XML
 Add ` PhotosPreviewRecyclerview ` in your layout.
 
-``` <com.example.photosrecyclerview.PhotosPreviewRecyclerview
+``` 
+<com.example.photosrecyclerview.PhotosPreviewRecyclerview
             android:id="@+id/recycler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/> 
@@ -29,16 +30,18 @@ You will see a fake preview in Android Studio of the recycleView.
 
 ## In your Activity / Fragment
 Use ` findViewById ` to find your ` PhotosPreviewRecyclerview `:
+
 `PhotosPreviewRecyclerview recycler = findViewById(R.id.recycler);`
 
 First you **must** to initialize the recycler by calling the `init` function :
+
 `recycler.init(YOUR_DESIRED_PHOTOS_NUMBER : int);`
 
 <img src="samples/example1.jpg" width="200" height="400">
-<!-- ![Init](samples/example1.jpg) -->
 
 By default, this recyclerView uses `GridLayoutManager` with a span of 4.
 To change the span just use `recycler.setSpanCount(YOUR_DESIRED_SPAN_COUNT : int);`
+
 you can change the layout manager by simply setting another layout manager :
 `recycler.setLayoutManager(new LinearLayoutManager(getContext(),HORIZONTAL/VERTICAL, false));`
 
@@ -46,12 +49,12 @@ You can change the photos size in the recycler by simply calling `setImagesSize`
 `recycler.setImagesSize(WIDTH,HEIGHT : int);`
 **The width and height in dp!**
 
-![Changing the size](samples/examplesize.jpg)
+<img src="samples/examplesize.jpg" width="200" height="400">
 
 You can change the color of the delete button by calling `setDeleteButtonColor` :
 `recycler.setDeleteButtonColor(R.color.ANY_COLOR : int);`
 
-![Changing the button color](samples/examplecolor.jpg)
+<img src="samples/examplecolor.jpg" width="200" height="400">
 
 You can change the place holder image with `recycler.setPlaceholder(RESOURCE_ID : int);` .
 
@@ -73,7 +76,7 @@ Then `recycler.setImagesUris(urls : ArrayList<String>);`
 If the recycler reaches his limit of capacity a Toast will appear with the message 'Full',
 you can change it by calling `recycler.setMessageWhenFull(YOUR_DESIRED_MESSAGE_IN_STRING : string);`
 
-![Changing the message when full](samples/examplemsg.jpg)
+<img src="samples/examplemsg.jpg" width="200" height="400">
 
 There is a listener for touch/click event on each of the photos, you can do whatever you want there : 
 ```
@@ -84,7 +87,3 @@ recycler.setOnTouchPreviewImageListener(new PreviewImagesAdapter.OnTouchPreviewI
             }
         });
 ```
-
-
-
-
