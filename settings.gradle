@@ -1,0 +1,3 @@
+rootProject.name = "PhotosRecycler"
+include ':app'
+include ':photosrecyclerview'

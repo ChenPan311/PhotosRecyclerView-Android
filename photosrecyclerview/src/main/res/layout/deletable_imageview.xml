@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_image_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_iv"
+            android:layout_alignEnd="@id/image_iv"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="-10dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_round_remove"
+            app:backgroundTint="@color/colorAccent"
+            app:borderWidth="0dp"
+            app:fabCustomSize="20dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
