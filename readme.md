@@ -1,5 +1,6 @@
 # PhotosRecyclerView - Android
 [![](https://jitpack.io/v/ChenPan311/PhotosRecyclerView-Android.svg)](https://jitpack.io/#ChenPan311/PhotosRecyclerView-Android)
+
 A simple and customizable library for managing photos preview inside a recyclerview.
 * Use it in activity or fragment.
 * Use it in linear/horizontal view or grid.
