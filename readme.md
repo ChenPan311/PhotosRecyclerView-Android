@@ -26,7 +26,7 @@ Add the dependency:
 
 ```
 dependencies {
-        implementation 'com.github.ChenPan311:PhotosRecyclerView-Android:Tag'
+        implementation 'com.github.ChenPan311:PhotosRecyclerView-Android:v1.0'
 }
 ```
 
