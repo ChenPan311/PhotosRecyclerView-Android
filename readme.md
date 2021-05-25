@@ -15,19 +15,19 @@ Add it in your root build.gradle at the end of repositories:
 
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 Add the dependency:
 
 ```
-	dependencies {
-	        implementation 'com.github.ChenPan311:PhotosRecyclerView-Android:Tag'
-	}
+dependencies {
+        implementation 'com.github.ChenPan311:PhotosRecyclerView-Android:Tag'
+}
 ```
 
 
@@ -102,6 +102,8 @@ If the recycler reaches his limit of capacity a Toast will appear with the messa
 you can change it by calling `recycler.setMessageWhenFull(YOUR_DESIRED_MESSAGE_IN_STRING : string);`
 
 <img src="samples/examplemsg.jpg" width="200" height="400">
+
+You can get all the images urls by calling `recycler.getSelectedImageList()` which returns a List of the urls.
 
 There is a listener for touch/click event on each of the photos, you can do whatever you want there : 
 ```
